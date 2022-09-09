@@ -1,0 +1,79 @@
+html {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* header */
+header {
+  padding: var(--gutter-width) calc(var(--gutter-width) * 2);
+  height: var(--header-height);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header .app-nav-list {
+  display: flex;
+  flex: 1 1 auto;
+  margin-left: var(--gutter-width) calc((--gutter-width) / 2);
+}
+
+header .app-nav-list > li {
+  margin-left: var(--gutter-width);
+}
+
+header .app-main-btn {
+  border: none;
+  padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+  background: var(--button-color-mobile);
+  color: white;
+  text-transform: uppercase;
+}
+
+/*main*/
+.app-main-wrap {
+  margin: 0 calc(var(--gutter-width) * 2);
+  height: calc(100% - var(--header-height) - var(--footer-height));
+  box-sizing: border-box;
+  display: flex;
+}
+
+.app-main-wrap .app-main {
+  text-align: center;
+  width: 100%;
+  margin-right: calc(var(--gutter-width) * 2);
+}
+
+.app-main-wrap .app-sidebar {
+  border: 1px solid #000;
+  min-width: 25%;
+  box-sizing: border-box;
+  padding: calc(var(--gutter-width) / 2) var(--gutter-width);
+  margin-top: var(--gutter-width);
+}
+
+.app-main-wrap .desc {
+  margin: calc(var(--gutter-width) / 2) 0 var(--gutter-width);
+
+}
+
+.app-main-wrap .app-bg-cont img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  position: relative;
+  margin: 0 calc(var(--gutter-width) * 2);
+  height: var(--footer-height);
+  text-align: center;
+  overflow: auto;
+  box-sizing: border-box;
+}

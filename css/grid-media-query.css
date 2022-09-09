@@ -1,0 +1,55 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .app-main-wrap {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+
+  .app-main-wrap .app-sidebar {
+    width: auto;
+    display: block;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .app-main-wrap {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .app-main-wrap .app-sidebar {
+    width: auto;
+    display: inline-grid;
+
+  }
+
+  .app-main-wrap {
+    height: initial;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header > li {
+    text-decoration: none;
+  }
+
+  .app-main-wrap {
+    display: grid;
+    grid-template-columns: 2.9fr 1fr;
+  }
+
+  .app-sidebar {
+    display: inline-block;
+  }
+
+  .app-desktop {
+    overflow: auto;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
